@@ -3,12 +3,11 @@
   "title": "OS-Q Quectel",
   "description": "Quectel development platform",
   "url": "https://github.com/Wiz-IO/platform-quectel",
-  "homepage": "http://www.wizio.eu/",
-  "license": "Apache-2.0",
+  "homepage": "http://www.OS-Q.com/P627",
   "engines": { "platformio": "^3.0.0" },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Wiz-IO/platform-quectel.git"
+    "url": "https://github.com/Wiz-IO/P627.git"
   },
   "version": "2.1.03",
   "packageRepositories": [
