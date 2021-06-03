@@ -21,7 +21,7 @@ def dev_header(target, source, env):
 
 def dev_create_template(env):
     D = join(env.subst("$PROJECT_DIR"), "src")
-    S = join(env.PioPlatform().get_package_dir("framework-quectel"), "templates", env.BoardConfig().get("build.core"))
+    S = join(env.PioPlatform().get_package_dir("E627"), "templates", env.BoardConfig().get("build.core"))
     if False == os.path.isfile( join(D, "main.c") ) and False == os.path.isfile( join(D, "main.cpp") ):
         copyfile( join(S, "main.c"), join(D, "main.c") )
 
@@ -48,7 +48,7 @@ def dev_compiler(env):
 def dev_init(env, platform):
     dev_create_template(env)
     dev_compiler(env)
-    framework_dir = env.PioPlatform().get_package_dir("framework-quectel")
+    framework_dir = env.PioPlatform().get_package_dir("E627")
     env.core    = env.BoardConfig().get("build.core")
     env.sdk     = env.BoardConfig().get("build.sdk", "SDK100").upper() # max ver
     env.base    = env.BoardConfig().get("build.base", "0x40000000")    # or 0x43000000

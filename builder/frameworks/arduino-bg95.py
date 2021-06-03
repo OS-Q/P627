@@ -45,7 +45,7 @@ def dev_compiler(env):
 def dev_init(env, platform):
     dev_create_template(env)
     dev_compiler(env)
-    framework_dir = env.PioPlatform().get_package_dir("framework-quectel")
+    framework_dir = env.PioPlatform().get_package_dir("E627")
     env.core = env.BoardConfig().get("build.core")
     variant = env.BoardConfig().get("build.variant")
     env.sdk = env.BoardConfig().get("build.sdk", "SDK102").upper()

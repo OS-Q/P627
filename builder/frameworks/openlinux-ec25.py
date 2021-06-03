@@ -39,7 +39,7 @@ def dev_compiler(env):
 def dev_init(env, platform):
     dev_compiler(env)
     toolchain_dir = env.PioPlatform().get_package_dir("toolchain-gcc-ec2x")
-    env.framework_dir = env.PioPlatform().get_package_dir("framework-quectel")
+    env.framework_dir = env.PioPlatform().get_package_dir("E627")
 
     with open(join(toolchain_dir, "package.json"), 'r') as f:
         j = json.load(f)

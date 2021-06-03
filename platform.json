@@ -16,26 +16,26 @@
   ],
   "frameworks": {
       "opencpu": {
-        "package": "framework-quectel",
+        "package": "E627",
         "script": "builder/frameworks/opencpu.py"
       },
       "openlinux": {
-        "package": "framework-quectel",
+        "package": "E627",
         "script": "builder/frameworks/openlinux.py"
       },
       "threadx": {
-        "package": "framework-quectel",
+        "package": "E627",
         "script": "builder/frameworks/threadx.py"
       },
       "arduino": {
-        "package": "framework-quectel",
+        "package": "E627",
         "script": "builder/frameworks/arduino.py"
       }
   },
   "packages": {
-    "framework-quectel": {
+    "E627": {
         "type": "framework",
-        "version": "https://github.com/Wiz-IO/framework-quectel.git"
+        "version": "https://github.com/OS-Q/E627.git"
     },
     "toolchain-gccarmnoneeabi": {
         "type": "toolchain",
@@ -43,7 +43,7 @@
     },
     "toolchain-gcc-ec2x": {
         "type": "toolchain",
-        "version": "https://github.com/Wiz-IO/LIB/raw/master/quectel/toolchain-gcc-ec2x-v1.0.0.zip"
+        "version": "https://github.com/OS-Q/D627/raw/master/toolchain-gcc-ec2x-v1.0.0.zip"
     },
     "tool-quectel": {
         "type": "uploader",
